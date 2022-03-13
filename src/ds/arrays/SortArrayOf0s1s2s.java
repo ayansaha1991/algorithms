@@ -13,7 +13,7 @@ public class SortArrayOf0s1s2s {
 	private static void print(int[] nums) {
 
 		for (int i : nums) {
-			System.out.println(i);
+			System.out.print(i + ", ");
 		}
 	}
 
