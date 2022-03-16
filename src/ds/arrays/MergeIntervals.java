@@ -3,6 +3,11 @@ package ds.arrays;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Merge overlapping time intervals and return non-overlapping intervals.
+ * @author Ayan Saha
+ *
+ */
 public class MergeIntervals {
 
 	public static void main(String[] args) {

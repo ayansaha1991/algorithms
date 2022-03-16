@@ -21,7 +21,7 @@ public class QuickSort {
 		print(randomArray);
 	}
 
-	private static void sort(int[] arr, int start, int end) {
+	public static void sort(int[] arr, int start, int end) {
 
 		if (start >= end) {
 			return;
