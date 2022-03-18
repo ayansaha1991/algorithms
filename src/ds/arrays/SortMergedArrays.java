@@ -1,6 +1,5 @@
 package ds.arrays;
 
-import java.util.Iterator;
 import java.util.Random;
 
 public class SortMergedArrays {
@@ -13,17 +12,16 @@ public class SortMergedArrays {
 		int na = a.length;
 		int nb = b.length;
 		
-		
-		int[] mergedArray = mergeWithExtraSpace(a, b, na, nb);
+		int[] mergedArray = mergeWithExtraSpace(a, na, b, nb);
 		print(mergedArray);
 		
 		System.out.println("------------");
-		mergeWithoutExtraSpace(a, b, na, nb);
+		mergeWithoutExtraSpace(a, na, b, nb);
 		print(a);
 		print(b);
 	}
 	
-	private static void mergeWithoutExtraSpace(int[] a, int[] b, int na, int nb) {
+	private static void mergeWithoutExtraSpace(int[] a, int na, int[] b, int nb) {
 		
 		for (int i = 0; i < a.length; i++) {
 			if (a[i] > b[0]) {
@@ -49,7 +47,7 @@ public class SortMergedArrays {
 
 	
 
-	private static int[] mergeWithExtraSpace(int[] a, int[] b, int na, int nb) {
+	private static int[] mergeWithExtraSpace(int[] a, int na, int[] b, int nb) {
 		
 		int[] result = new int[a.length + b.length];
 		
